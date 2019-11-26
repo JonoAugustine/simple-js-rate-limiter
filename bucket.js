@@ -52,4 +52,8 @@ class Bucket {
   get running() {
     return this.interval !== null;
   }
+
+  get size() {
+    return this.queue.length;
+  }
 }
